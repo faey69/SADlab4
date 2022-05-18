@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Lab4-SignUp Form" content="HTML, CSS practice, SignUp Form">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab4 SignUp Form</title>
+</head>
+
+<body>
+<style>
+body {
+	background-image:url('https://wallpapercave.com/wp/wp7487029.jpg');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+h1{
+	color: #41fa1b;
+	text-shadow: 2px 2px 10px black, 0 0 5px #0000FF;
+	border: inset;
+	background-color: none;
+	text-align: center;
+}
+
+.center {
+	margin: auto;
+	width: 55%;
+	border: 3px inset #41fa1b;
+	padding: 2%;
+}
+
+form {
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	font-weight: bold;
+}
+</style>
+<h1>Sign Up Now</h1>
+
+<div class="center" style="opacity: 0.7; background-color: white;">
+  <form>
+	<input type="text" id="fname" name="fname" value="First Name" size="50">
+	<input type="text" id="lname" name="lname" value="Last Name" size="50"><br><br>
+	<textarea rows="3" cols="108" name="address" style="font-weight: bold;">Location Address</textarea><br><br>
+	<input type="text" id="email" name="email" value="E-mail address" size="106"><br><br>
+	<input type="text" id="phonenum" name="phonenum" value="Phone Number" size="106"><br><br>
+	<label for="username">Username:</label><br>
+	<input type="text" id="username" name="username" value="Username" size="50"><br><br>
+	<label for="password">Password:</label><br>
+	<input type="password" id="password" name="password" size="50"><br><br>
+	<label for="repassword">Re-Enter Password:</label><br>
+	<input type="password" id="repassword" name="repassword" size="50"><br><br>
+	<input type="submit" value="Create Account">
+  </form>
+</div>
+
+<style>
+.audio {
+	display: flex;
+	justify-content: center;
+	align-items: center 
+}
+</style>
+
+<div class="audio">
+	<audio controls loop>
+		<source src="AriaBGM.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+</div>
+
+<style>
+.help {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+button{
+	background-color: none;
+	opacity: 0.8;
+}
+</style>
+<div class="help">
+	<a href='https://en.wikipedia.org/wiki/Help_desk'>
+		<button><img src="https://www.downloadclipart.net/large/30742-help-button-clipart.png" alt="help" width="3%" height="3%"></button>
+	</a>
+</div>
+</body>
+</html>
