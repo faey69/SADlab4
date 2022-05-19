@@ -29,7 +29,7 @@ h1{
 	padding: 2%;
 }
 
-form {
+.mainform {
 	text-align: center;
 }
 
@@ -44,7 +44,7 @@ input {
 <h1>Sign Up Now</h1>
 
 <div class="center" style="opacity: 0.7; background-color: white;">
-  <form>
+  <form class="mainform">
 	<input type="text" id="fname" name="fname" value="First Name" size="50">
 	<input type="text" id="lname" name="lname" value="Last Name" size="50"><br><br>
 	<textarea rows="3" cols="108" name="address" style="font-weight: bold;">Location Address</textarea><br><br>
@@ -77,20 +77,22 @@ input {
 
 <style>
 .help {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	border-color: rgba(0,0,0,0);
 }
 
-button{
-	background-color: none;
-	opacity: 0.8;
+#help1 {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: 1.0;
+	background: transparent;
+	border-color: transparent;
 }
+
 </style>
 <div class="help">
-	<a href='https://en.wikipedia.org/wiki/Help_desk'>
-		<button><img src="https://www.downloadclipart.net/large/30742-help-button-clipart.png" alt="help" width="3%" height="3%"></button>
-	</a>
+	<button id="help1" onclick="window.location.href='https://en.wikipedia.org/wiki/Help_desk';"><img src="https://www.downloadclipart.net/large/30742-help-button-clipart.png" alt="help" width="60px" height="60px"></button>
 </div>
+
 </body>
 </html>
